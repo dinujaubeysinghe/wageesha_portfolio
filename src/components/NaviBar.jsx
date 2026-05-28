@@ -3,32 +3,44 @@ import { motion } from 'framer-motion'
 
 const NaviBar = () => {
   return (
-    <div className='flex h-15 items-center justify-between px-10 mt-4 rounded-2xl mx-3 bg-white bg-shadow-3xl'>
-        <div>
+    <div className='flex h-18 items-center justify-between px-10 mt-4  mx-3 bg-white bg-shadow-3xl'>
+        <div className='cursor-pointer'>
             <img src={logo} alt="logo" className='w-80'/>
         </div>
         <div className='flex w-4xl justify-between'>
         <div className='flex justify-around w-3xl font-main '>
-            <motion.button whileHover={{ scale: 1.03 }} className='hover:text-primary'>
+            <motion.a 
+            whileHover={{ scale: 1.03 }} 
+            className='hover:text-primary cursor-pointer'>
                 Home
-            </motion.button>
-            <motion.button whileHover={{ scale: 1.03 }} className='hover:text-primary'>
+            </motion.a>
+            <motion.a 
+            whileHover={{ scale: 1.03 }} 
+            className='hover:text-primary cursor-pointer'>
                 About Me
-            </motion.button>
-            <motion.button whileHover={{ scale: 1.03 }} className='hover:text-primary'>
+            </motion.a>
+            <motion.a 
+            whileHover={{ scale: 1.03 }} 
+            className='hover:text-primary cursor-pointer'>
                 Education
-            </motion.button>
-            <motion.button whileHover={{ scale: 1.03 }} className='hover:text-primary'>
+            </motion.a>
+            <motion.a 
+            whileHover={{ scale: 1.03 }} 
+            className='hover:text-primary cursor-pointer'>
                 Projects
-            </motion.button>
-            <motion.button whileHover={{ scale: 1.03 }} className='hover:text-primary'>
+            </motion.a>
+            <motion.a 
+            whileHover={{ scale: 1.03 }} 
+            className='hover:text-primary cursor-pointer'>
                 Voice
-            </motion.button>
+            </motion.a>
         </div>
         <div className='font-main'>
-            <motion.button whileHover={{ scale: 1.03 }} className='hover:text-primary'>
+            <motion.a 
+            whileHover={{ scale: 1.03 }} 
+            className='hover:text-primary cursor-pointer'>
                 Contact Me
-            </motion.button>
+            </motion.a>
         </div>
         </div>
     </div>
